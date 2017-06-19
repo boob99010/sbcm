@@ -18,7 +18,8 @@
 */
 package com.rapidminer.test;
 
-import static junit.framework.Assert.*;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -31,6 +32,7 @@ import com.rapidminer.operator.OperatorVersion;
  */
 public class OperatorVersionTest {
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testParse() {
 		OperatorVersion reference = new OperatorVersion(5,1,2);
@@ -44,6 +46,7 @@ public class OperatorVersionTest {
 //		assertEquals(reference, new OperatorVersion("5.1.2beta"));		
 //	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testZero() {
 		OperatorVersion reference = new OperatorVersion("5.1.2");

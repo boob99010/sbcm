@@ -45,6 +45,7 @@ public class EscapeTest {
 		assertEquals("one\\.two\\.three\\.\\.five", Tools.escape("one.two.three..five", '\\', new char[] {'.'}));
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testUnescape() {
 		List<String> result = new LinkedList<String>();

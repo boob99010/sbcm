@@ -18,15 +18,15 @@
 */
 package com.rapidminer.operator;
 
+import java.util.Iterator;
+import java.util.List;
+
 import com.rapidminer.operator.meta.FeatureIterator;
 import com.rapidminer.operator.ports.DummyPortPairExtender;
 import com.rapidminer.operator.ports.PortPairExtender;
 import com.rapidminer.parameter.ParameterType;
 import com.rapidminer.parameter.ParameterTypeList;
 import com.rapidminer.parameter.ParameterTypeString;
-
-import java.util.Iterator;
-import java.util.List;
 
 
 /**
@@ -65,6 +65,7 @@ import java.util.List;
  * @author Ingo Mierswa
  */
 
+@SuppressWarnings("deprecation")
 public class MacroDefinitionOperator extends Operator {
 
 	/** The parameter name for &quot;The values of the user defined macros.&quot; */

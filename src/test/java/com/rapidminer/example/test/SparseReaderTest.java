@@ -48,6 +48,7 @@ public class SparseReaderTest {
 
 	private static final String[] LABEL = { "yes", "no", "no", "yes" };
 
+	@SuppressWarnings("deprecation")
 	public void readerTest(int format, Reader input, Reader labelInput) throws Exception {
 		AttributeSet attributeSet = new AttributeSet();
 		Attribute att1 = ExampleTestTools.attributeDogCatMouse();

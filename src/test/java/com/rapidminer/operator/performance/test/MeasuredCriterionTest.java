@@ -82,6 +82,7 @@ public class MeasuredCriterionTest extends AbstractCriterionTestCase {
 	}
 
 	/** Tests calculation, average, and clone. */
+	@SuppressWarnings("deprecation")
 	private void criterionTest(PerformanceCriterion c1, PerformanceCriterion c2, double expected1, double expected2, double expectedOverall) throws Exception {
 		PerformanceVector pv1 = new PerformanceVector();
 		pv1.addCriterion(c1);

@@ -282,7 +282,6 @@ public class ExtendedErrorDialog extends ButtonDialog {
 	 *            The error occurred
 	 * @return
 	 */
-	@SuppressWarnings("unused") // Contains Bugzilla code for later usage
 	private Collection<AbstractButton> getButtons(boolean hasError, boolean isBug, final JComponent detailedPane,
 			final Throwable error) {
 		Collection<AbstractButton> buttons = new LinkedList<>();

@@ -82,6 +82,7 @@ import com.rapidminer.tools.Tools;
  *
  * @author Ingo Mierswa
  */
+@SuppressWarnings("deprecation")
 public class DataMacroDefinitionOperator extends Operator {
 
 	private InputPort exampleSetInput = getInputPorts().createPort("example set", ExampleSet.class);

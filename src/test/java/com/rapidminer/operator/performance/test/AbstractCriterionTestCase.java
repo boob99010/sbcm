@@ -18,8 +18,8 @@
 */
 package com.rapidminer.operator.performance.test;
 
-import static junit.framework.Assert.assertEquals;
 import static com.rapidminer.test_utils.RapidAssert.assertEqualsNaN;
+import static junit.framework.Assert.assertEquals;
 
 import com.rapidminer.operator.performance.PerformanceCriterion;
 
@@ -32,6 +32,7 @@ import com.rapidminer.operator.performance.PerformanceCriterion;
  */
 public abstract class AbstractCriterionTestCase {
 
+	@SuppressWarnings("deprecation")
 	public static void assertAllValuesEqual(String message, PerformanceCriterion expected, PerformanceCriterion actual) {
 		message += " " + expected.getName();
 		assertEquals(message + " value", expected.getMikroAverage(), actual.getMikroAverage(), 0.000000001);
