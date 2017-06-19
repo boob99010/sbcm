@@ -48,6 +48,7 @@ import com.rapidminer.operator.performance.PerformanceVector;
  */
 public class ClassificationCriterionTest extends AbstractCriterionTestCase {
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testClassificationError() throws Exception {
 		Attribute label = ExampleTestTools.attributeYesNo();

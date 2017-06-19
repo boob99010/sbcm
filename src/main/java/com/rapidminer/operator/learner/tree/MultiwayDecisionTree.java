@@ -81,6 +81,7 @@ public class MultiwayDecisionTree extends AbstractMetaLearner {
 
 	@Override
 	public Model learn(ExampleSet exampleSet) throws OperatorException {
+		@SuppressWarnings("deprecation")
 		GroupedModel groupedModel = new GroupedModel();
 
 		// applying inner learner in order to get tree model

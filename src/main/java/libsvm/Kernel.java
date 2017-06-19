@@ -46,7 +46,7 @@ public abstract class Kernel extends QMatrix {
 	@Override
 	void swap_index(int i, int j) {
 		do {
-			svm_node[] _ = x[i];
+			svm_node[]_ = x[i];
 			x[i] = x[j];
 			x[j] = _;
 		} while (false);

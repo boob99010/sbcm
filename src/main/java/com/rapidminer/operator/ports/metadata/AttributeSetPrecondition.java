@@ -112,10 +112,12 @@ public class AttributeSetPrecondition extends AbstractPrecondition {
 			return new String[0];
 		}
 
+		@SuppressWarnings("unused")
 		public ParameterHandler getHandler() {
 			return this.handler;
 		}
 
+		@SuppressWarnings("unused")
 		public String getParameterKey() {
 			return this.parameterKey;
 		}

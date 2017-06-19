@@ -256,6 +256,7 @@ public class DataRowConcurrencyTest {
 	 */
 	private static MemoryExampleTable createMemoryExampleTable(int size, int dataManagement, int seed) {
 		Attribute[] attributes = ExampleTestTools.createFourAttributes();
+		@SuppressWarnings("deprecation")
 		MemoryExampleTable exampleTable = new MemoryExampleTable(attributes);
 
 		DataRowFactory rowFactory = new DataRowFactory(dataManagement, '.');

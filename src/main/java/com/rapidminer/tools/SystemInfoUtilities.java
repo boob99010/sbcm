@@ -188,7 +188,8 @@ public final class SystemInfoUtilities {
 
 		// if the system bean is an implementation by sun, we are almost done
 		try {
-			memory = ((com.sun.management.OperatingSystemMXBean) operatingSystemBean).getFreePhysicalMemorySize();
+			long freePhysicalMemorySize = extracted(operatingSystemBean);
+			memory = freePhysicalMemorySize;
 		} catch (Throwable t) { // NOPMD
 			// fallback due to sun implementation not being available
 			// in this case we behave as before 6.0.004 where we did not take free memory into
@@ -199,6 +200,10 @@ public final class SystemInfoUtilities {
 		memory /= TENTH_POWER_OF_TWO; // kbyte
 		memory /= TENTH_POWER_OF_TWO; // mbyte
 		return memory;
+	}
+
+	private static long extracted(OperatingSystemMXBean operatingSystemBean) {
+		return ((com.sun.management.OperatingSystemMXBean) operatingSystemBean).getFreePhysicalMemorySize();
 	}
 
 	private static String executeMemoryInfoProcess(String... command) throws IOException {

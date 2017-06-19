@@ -85,6 +85,7 @@ public class ExampleTestTools {
 		return new ListDataRowReader(dataRows.iterator());
 	}
 
+	@SuppressWarnings("deprecation")
 	public static MemoryExampleTable createMemoryExampleTable(int size) {
 		Attribute[] attributes = createFourAttributes();
 		return new MemoryExampleTable(Arrays.asList(attributes), createDataRowReader(size, attributes));

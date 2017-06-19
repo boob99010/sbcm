@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><packages version="1.3">
+  <package exploded="true" inWorkspace="true" name="sbcm.jar" todir="/sbcm" type="jar">
+    <properties>
+      <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="14978196368507475020043996190031483"/>
+    </properties>
+  </package>
+  <properties/>
+</packages>

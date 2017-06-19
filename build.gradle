@@ -144,7 +144,7 @@ dependencies {
 	compile 'com.fasterxml.jackson.core:jackson-databind:2.6.6'
 }
 
-task wrapper(type: Wrapper) { gradleVersion = '2.14.1' }
+task wrapper(type: Wrapper) { gradleVersion = '4.0' }
 
 apply from: 'gradle/wsimport.gradle'
 apply from: 'gradle/props.gradle'

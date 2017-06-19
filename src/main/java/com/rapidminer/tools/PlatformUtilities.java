@@ -35,9 +35,20 @@ import java.util.logging.Logger;
  *
  * @author Nils Woehler
  */
-@SuppressWarnings({ "PMD.AvoidSynchronizedAtMethodLevel", "PMD.TooManyMethods", "PMD.GodClass" })
+@SuppressWarnings({ PlatformUtilities.PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL22222, PlatformUtilities.PMD_TOO_MANY_METHODS222 })
 public final class PlatformUtilities {
 
+	static final String PMD_TOO_MANY_METHODS = "PMD.TooManyMethods";
+	static final String PMD_TOO_MANY_METHODS2 = PlatformUtilities.PMD_TOO_MANY_METHODS;
+	static final String PMD_TOO_MANY_METHODS22 = PlatformUtilities.PMD_TOO_MANY_METHODS2;
+	static final String PMD_TOO_MANY_METHODS222 = PlatformUtilities.PMD_TOO_MANY_METHODS22;
+	static final String PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL = "PMD.AvoidSynchronizedAtMethodLevel";
+	static final String PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL2 = PlatformUtilities.PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL;
+	static final String PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL22 = PlatformUtilities.PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL2;
+	static final String PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL222 = PlatformUtilities.PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL22;
+	static final String PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL2222 = PlatformUtilities.PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL222;
+	static final String PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL22222 = PlatformUtilities.PMD_AVOID_SYNCHRONIZED_AT_METHOD_LEVEL2222;
+	static final String PMD_GOD_CLASS = "PMD.GodClass";
 	private static final String PLATFORM_PROPERTIES = "conf/platform.properties";
 	private static final String PLATFORM_PROPERTY_KEY = "platform";
 	private static final String GRADLE_PROPERTIES = "gradle.properties";

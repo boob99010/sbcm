@@ -624,6 +624,7 @@ public class AntlrParserDateTest extends AntlrParserTest {
 
 	// date_set
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void dateSetBasic() {
 		try {
@@ -638,6 +639,7 @@ public class AntlrParserDateTest extends AntlrParserTest {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void dateSetBasicWithLocaleTZ() {
 		try {
@@ -652,6 +654,7 @@ public class AntlrParserDateTest extends AntlrParserTest {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void dateSetBasicWithLocaleTZMissing() {
 		try {
