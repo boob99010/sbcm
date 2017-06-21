@@ -101,6 +101,7 @@ public class MaterializeDataInMemoryTest {
 	 *            the data management strategy (see {@link DataRowFactory} for more information)
 	 * @return the created example set as {@link MemoryExampleTable}
 	 */
+	@SuppressWarnings("deprecation")
 	private static MemoryExampleTable createMemoryExampleTable(int size, int dataManagement) {
 		Attribute[] attributes = ExampleTestTools.createFourAttributes();
 		MemoryExampleTable exampleTable = new MemoryExampleTable(attributes);
